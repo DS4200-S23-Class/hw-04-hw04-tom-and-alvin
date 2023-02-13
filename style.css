@@ -1,0 +1,38 @@
+body {
+	font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+.left-column {
+ 	width: 60%;
+    float: left;
+}
+      
+.right-column {
+	width: 40%;
+	float: right;
+}
+
+#frame {
+	width: 550px;
+	height: 550px;
+}
+
+line {
+	stroke: black;
+	stroke-width: 4;
+}
+
+circle {
+	fill: purple;
+}
+
+circle:hover {
+	fill: orange;
+}
+
+
+
