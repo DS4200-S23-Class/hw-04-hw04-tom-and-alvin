@@ -17,19 +17,52 @@
             <line x1="100" y1="500" x2="500" y2="500"/>
             <line x1="100" y1="500" x2="100" y2="100"/>
             <!--Each unit increase adds 40 to the scale-->
-            <circle cx="100" cy="500" r="8"/> <!-- (0,0) (delete later)-->
-            <circle cx="500" cy="100" r="8"/> <!-- (10,10) (delete later)-->
-            <circle cx="140" cy="420" r="8"/> <!-- (1,2) -->
-            <circle cx="180" cy="340" r="8"/> <!-- (2,4) -->
-            <circle cx="340" cy="420" r="8"/> <!-- (6,2) -->
-            <circle cx="460" cy="140" r="8"/> <!-- (9,9) -->
+            <circle class = "norm" cx="140" cy="420" r="8"/> <!-- (1,2) -->
+            <circle class = "norm" cx="180" cy="340" r="8"/> <!-- (2,4) -->
+            <circle class = "norm" cx="340" cy="420" r="8"/> <!-- (6,2) -->
+            <circle class = "norm" cx="460" cy="140" r="8"/> <!-- (9,9) -->
         </svg>
     </div>
 
     <div class = "right-column">
-        Right
+        <form>
+
+            <div>
+                <p1>Choose the x-coordinate for your point.</p1>
+                    <select id="xCoordinate">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+            </div>
+
+            
+            <div>
+                <p1>Choose the y-coordinate for your point.</p1>
+                    <select id="yCoordinate">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+            </div>
+
+            <button type='button' id='addPoint'>Add custom point</button>
+        </form>
     </div>
 
+<script src="main.js"> </script>
 </body>
 
 </html>

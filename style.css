@@ -21,6 +21,11 @@ h1 {
 	height: 550px;
 }
 
+.clicked {
+  stroke: red;
+  stroke-width: 4;
+}
+
 line {
 	stroke: black;
 	stroke-width: 4;
