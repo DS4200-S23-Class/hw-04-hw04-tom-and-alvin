@@ -1,43 +1,64 @@
+/*Makes the entire body Arial font*/
 body {
 	font-family: Arial;
 }
 
+/*Centers the main header of the webpage*/
 h1 {
   text-align: center;
 }
 
+/*Centers the acknowledgements of the webpage*/
+h2 {
+  text-align: center;
+}
+
+/*The left (grid) part of the page takes up 60% of the left side of the page*/
 .left-column {
  	width: 60%;
-    float: left;
+  float: left;
 }
-      
+
+/*The right (written) part of the page takes up 40% of the right side of the page*/
 .right-column {
 	width: 40%;
 	float: right;
 }
 
+/*The frame is 550 by 550 pixels*/
 #frame {
 	width: 550px;
 	height: 550px;
 }
 
+/*Creates a border around the circle or point when clicked*/
 .clicked {
   stroke: red;
   stroke-width: 4;
 }
 
+/*Styles the lines for the x and y axis with a dark black format*/
 line {
 	stroke: black;
 	stroke-width: 4;
 }
 
+/*Makes each point on the grid purple*/
 circle {
 	fill: purple;
 }
 
+
+/*Makes each point turn orange when the mouse hovers over it*/
 circle:hover {
 	fill: orange;
 }
 
-
-
+/*Aligns the acknowledgements at the bottom of the page*/
+#footer {
+    height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}

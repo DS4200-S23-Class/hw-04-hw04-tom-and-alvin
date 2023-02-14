@@ -1,6 +1,8 @@
+<!-- Creates the html page -->
 <!DOCTYPE html>
 <html> 
 
+<!--Creates the title for the webpage-->
 <head>
     <meta charset=utf-8/>
     <link rel="stylesheet" href="style.css">
@@ -9,14 +11,17 @@
 
 
 <body>
-
+    <!--The heading of the webpage-->
     <h1>hw-04: Event Handling</h1>
 
+    <!--Creates the frame for the grid and corresponding points on the left portion of the page-->
     <div class = "left-column">
         <svg id="frame">
+            <!--Creates the x and y axis-->
             <line x1="100" y1="500" x2="500" y2="500"/>
             <line x1="100" y1="500" x2="100" y2="100"/>
             <!--Each unit increase adds 40 to the scale-->
+            <!--Creates the 4 points-->
             <circle class = "norm" cx="140" cy="420" r="8"/> <!-- (1,2) -->
             <circle class = "norm" cx="180" cy="340" r="8"/> <!-- (2,4) -->
             <circle class = "norm" cx="340" cy="420" r="8"/> <!-- (6,2) -->
@@ -24,19 +29,20 @@
         </svg>
     </div>
 
+    <!--The portion of the page that handles adding new points and seeing the most recent point clicked-->
     <div class = "right-column">
 
         <div id = "lastClicked">
-     
+            
         </div>
-
-
 
         <form>
 
+            <!--Creates the dropdown menu for the x corrdinate for a user to enter in a new point-->
             <div>
                 <p1>Choose the x-coordinate for your point.</p1>
                     <select id="xCoordinate">
+                        <!--Users given options from 1 to 9-->
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -49,10 +55,11 @@
                     </select>
             </div>
 
-            
+            <!--Creates the dropdown menu for the y corrdinate for a user to enter in a new point-->
             <div>
                 <p1>Choose the y-coordinate for your point.</p1>
                     <select id="yCoordinate">
+                        <!--Users given options from 1 to 9-->
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -65,10 +72,28 @@
                     </select>
             </div>
 
+            <!--Creates a button for adding the certain point to the grid-->
             <button type='button' id='addPoint'>Add custom point</button>
         </form>
     </div>
 
+
+    <div id="footer">
+        <!--Makes an acknowledgement header-->
+        <h2> Acknowledgements</h2>
+            <ul>
+                <!--All the resources we used in order to complete out assignment-->
+                <li>https://stackoverflow.com/questions/8824831/make-div-stay-at-bottom-of-pages-content-all-the-time-even-when-there-are-scrol</li>
+                <li>https://learntheweb.courses/topics/advanced-svg/</li>
+                <li>https://www.w3schools.com/html/html_form_elements.asp</li>
+                <li>https://stackoverflow.com/questions/57186929/draw-elements-inside-group-in-svg-using-js</li>
+                <li>https://www.digitalocean.com/community/tutorials/js-classlist#handling-the-classlist-toggle-method</li>
+            </ul>
+    </div>
+
+
+
+<!--Links the javascript file-->
 <script src="main.js"> </script>
 </body>
 
