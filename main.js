@@ -3,11 +3,21 @@ function toggle(){
 
 }
 
+function get_coordinates(){
+	let x = (this.getAttribute('cx') - 100) / 40;
+	let y = 10 - ((this.getAttribute('cy') - 100) / 40);
+
+	let coordinate = `(${x}, ${y})`;
+	document.getElementById("lastClicked").innerHTML = coordinate;
+}
+
+
 function borders() {
 	const circles = document.getElementsByTagName("circle");
 
 	for (let i = 0; i <circles.length; i++) {
 		circles[i].addEventListener("click", toggle);
+		circles[i].addEventListener("click", get_coordinates);
 	}
 
 }
